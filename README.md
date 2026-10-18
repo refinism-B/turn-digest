@@ -23,6 +23,11 @@ The interface text is Traditional Chinese.
 (N steps: reads, files edited, test runs, other commands, subagents, failures, elapsed time; zero counts are left out).
 
 - Click the row to expand that turn; the row becomes `▾ 收合 · …`. Click again to fold it. Other turns are not affected; new turns start folded.
+
+| Folded | Expanded |
+|---|---|
+| ![A folded turn: one summary row, then the final reply](assets/collapsed.png) | ![The same turn expanded: the plan, the tool rows, then the final reply](assets/expanded.png) |
+
 - Folded: intermediate text, tool-call rows, tool results.
 - Never folded: your prompts, the final reply, intermediate text containing a question mark (`?` / `？`), and `AskUserQuestion` questions and answers.
 - When the mod cannot tell for sure whether a row belongs to a turn, it shows the row as is.
@@ -37,6 +42,10 @@ The interface text is Traditional Chinese.
 | green | `✓ 已完成 · 5 步：讀 2、改 1 檔、指令 2（4 失敗）· 15s` | turn ended, nothing pending |
 | red | `⚠ 回合已結束，但沒有任何子代理或背景工作在跑` | the reply's last paragraph says it is waiting (a fixed list of Chinese and English phrases), but nothing is running |
 | red | `✕ 回合中斷 · 5 步：… · 15s` | turn interrupted, refused or errored |
+
+![Running: a yellow line above the prompt's hint line](assets/running.png)
+
+![Done: a green line with the turn's tally](assets/done.png)
 
 The stall warning is shown on this line only: no sound, no notification, nothing is sent on your behalf. The mod makes no model calls.
 
