@@ -1,0 +1,7 @@
+{
+  "name": "turn-digest",
+  "version": "0.1.0",
+  "description": "Folds each turn's intermediate process into one clickable summary row and shows a coloured activity / stall-check line under the prompt.",
+  "author": { "name": "Bevis" },
+  "types": "./types/index.d.ts"
+}

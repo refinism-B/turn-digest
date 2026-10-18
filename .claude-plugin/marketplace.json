@@ -1,0 +1,13 @@
+{
+  "name": "turn-digest",
+  "description": "Fold each Claude Code turn into one summary row, with a coloured activity line.",
+  "owner": {
+    "name": "Bevis"
+  },
+  "plugins": [
+    {
+      "name": "turn-digest",
+      "source": "./"
+    }
+  ]
+}
